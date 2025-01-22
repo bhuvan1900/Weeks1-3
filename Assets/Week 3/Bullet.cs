@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
        if (hasBeenFired == true)
         {
 
-
+            Movement();
         }
         else
         {
@@ -30,7 +30,7 @@ public class Bullet : MonoBehaviour
 
     void Movement()
     {
-        //transform.position = transform.up * speed * Time.deltaTime;
+        transform.position += transform.up * speed * Time.deltaTime;
       
     }
 }
