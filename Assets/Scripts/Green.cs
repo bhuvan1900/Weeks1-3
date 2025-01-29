@@ -15,6 +15,7 @@ public class Green : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //follows mouse if space key hit
         if (Input.GetKey("space"))
         {
             Vector2 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);  

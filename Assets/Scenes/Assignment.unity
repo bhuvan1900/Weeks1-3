@@ -326,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 512776753}
   - component: {fileID: 512776752}
-  - component: {fileID: 512776751}
+  - component: {fileID: 512776754}
   m_Layer: 0
   m_Name: Red Circle
   m_TagString: Untagged
@@ -334,21 +334,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &512776751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512776750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b017d828f192c468e9e97c0f018ea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originalpos: {fileID: 512776753}
-  newpos: {fileID: 774932074}
-  t: 1.77
 --- !u!212 &512776752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -416,6 +401,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &512776754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512776750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b017d828f192c468e9e97c0f018ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newpos: {fileID: 774932074}
+  t: 0
+  startPos: {x: -0.008, y: 0.464, z: 0}
+  RedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &774932072
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,7 +791,7 @@ Transform:
   m_GameObject: {fileID: 2054277368}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 4}
   m_LocalScale: {x: 0.93, y: 0.93, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
